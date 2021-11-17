@@ -1,0 +1,13 @@
+syntax = "proto3";
+package customopt;
+option go_package = "./generated";
+
+import "google/protobuf/descriptor.proto";
+
+message MessageListOptions {
+    bool target = 10;
+}
+
+extend google.protobuf.MessageOptions {
+    MessageListOptions message_list = 50000;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+package example.protobuf;
+
+import "custom-options.proto";
+
+message FistSimpleMessage {
+    uint64 id = 1;
+    string name = 2;
+    bool ok = 3;
+    bytes blob = 4;
+}
+
+message SecondSimpleMessage {
+    option (customopt.message_list) = {target:true};
+    uint64 id = 1;
+    string name = 2;
+    bool ok = 3;
+    bytes blob = 4;
+}
