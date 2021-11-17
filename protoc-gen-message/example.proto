@@ -1,0 +1,16 @@
+syntax = "proto3";
+package example.protobuf;
+
+message FistSimpleMessage {
+    uint64 id = 1;
+    string name = 2;
+    bool ok = 3;
+    bytes blob = 4;
+}
+
+message SecondSimpleMessage {
+    uint64 id = 1;
+    string name = 2;
+    bool ok = 3;
+    bytes blob = 4;
+}
