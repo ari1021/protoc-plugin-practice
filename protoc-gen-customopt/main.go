@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/ari1021/protoc-plugin-practice/protoc-gen-customopt/generated"
+	"github.com/arkuchy/protoc-plugin-practice/protoc-gen-customopt/generated"
 	"github.com/golang/protobuf/proto"
 	descriptor "github.com/golang/protobuf/protoc-gen-go/descriptor"
 	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"
